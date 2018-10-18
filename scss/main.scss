@@ -1,0 +1,124 @@
+// MOBILE VERSION
+@import 'normalize';
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', 'Roboto', 'Raleway', sans-serif;
+  // background-image: url(../img/home-page-img/gb-op60.png);
+  background-color: azure;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.6em;
+  // text-align: center;
+  text-decoration: none;
+}
+.navbar {
+  $navheight: 4.5rem;
+
+  display: flex;
+  height: $navheight;
+  align-items: center;
+  background-color: hsl(203, 19%, 81%);
+  border-bottom: 4px solid hsl(172, 83%, 20%);
+
+  .logo {
+    flex-grow: 1;
+    height: $navheight;
+    display: flex;
+    padding-left: 1rem;
+    align-items: center;
+
+    img {
+      height: calc(4.5rem - 1.5rem); // sass variable substitution error
+      width: auto;
+    }
+  }
+
+  .nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+
+    .menu-item {
+      font-size: 1.5rem;
+      color: black;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+article {
+  background-image: url(../img/home-page-img/air-bubbles-1280.png);
+}
+
+// &:hover {
+//   background-color: hsl(182, 21%, 25%);
+//   cursor: pointer;
+// }
+
+// &.active {
+//   border-color: lighten(desaturate($brand-color, 30%), 20%);
+// }
+
+h1,
+h2,
+h3 {
+  font-family: 'Open Sans', 'Roboto', 'Raleway', sans-serif;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+article {
+  text-align: center;
+  margin: 2rem;
+  padding: 1rem;
+  justify-content: center;
+}
+footer {
+  background-color: darkslategray;
+}
+.footer-content {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.social-media {
+  background-image: url(../img/social-media/linkedin.png);
+  background-image: url(../img/social-media/facebook.png);
+  background-image: url(../img/social-media/twitter.png);
+  background-image: url(../img/social-media/instagram.png);
+}
+
+// TABLET VERSION
+@media all and (min-width: 35rem) {
+}
+
+// DESKTOP VERSION
+@media all and (min-width: 80rem) {
+}
+
+// // Declare variables
+// $charcoal: hsl(214, 29%, 24%);
+// $dark-grey: hsl(214, 29%, 24%);
+// $off-white: hsl(0, 18%, 90%);
+// $font-family-sans-serif: 'Open Sans', sans-serif, 'Roboto', sans-serif,
+//   'Raleway', sans-serif;
+
+// // Normalize
+// @import 'normalize';
