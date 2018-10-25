@@ -24,13 +24,37 @@
   </div>
 
   <main>
-    <h1>Hi, I'm Sunithi Dharshi
-      <br> Samarawickrama</h1>
-    <h2>Let me help you with your design needs!</h2>
-    <h2>Have a look at my Portfolio....</h2>
-    <p>I am an Interactive Media Designer and I have compiled my portfolio with all of my mixed media assignments done
-      at College thus far and hope to add to it as I progress in this field.</p>
+    <h1>Mixed Media Portfolio</h1>
+    <p>I am an Interactive Media Designer and I have compiled my portfolio
+      with all of my mixed media assignments done at Algonquin College thus far
+      and hope to add to it as I progress in this field.</p>
+
+    <div class="container">
+      <!-- <div><a href="img/ux-ui-design/"><img src="img/portfolio-page-img/UX-UI-Design-cover.png"></a></div> -->
+      <!-- <div><a><img src="img/portfolio-page-img/UX-UI-Design-cover.png" alt="UX/UI Design"></a></div> -->
+      <div><img src="img/portfolio-page-img/UX-UI-Design-cover.png" alt="UX/UI Design"><a href="#"></a></div>
+      <div><img src="img/portfolio-page-img/graphic-design.png" alt="Graphic Design"></div>
+      <div><img src="img/portfolio-page-img/photo-coverpng.png" alt="Photography"></div>
+      <div><img src="img/portfolio-page-img/sunset-1.png" alt="Web Design"></div>
+      <div><img src="img/portfolio-page-img/Books-coverpsd.png" alt="Children's Books"></div>
+      <div><img src="img/portfolio-page-img/miscel.png" alt="Miscellaneous"></div>
+    </div>
   </main>
+
+  <style>
+    .container {
+      display: grid;
+      grid-gap: 5px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      /* grid-template-rows: repeat(2, 200px); */
+    }
+
+    .container>div>img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
   <footer>
     <div class="footer-container">
       <div class="footer-content">
